@@ -120,6 +120,9 @@
         .modal-title { font-size: 1.5rem; color: var(--accent-blue); font-weight: 800; }
         .modal-close { background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; }
 
+        .modal-footer { padding: 14px 20px; display: flex; justify-content: center; align-items: center; background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.04); }
+        .modal-footer .modal-close { font-size: 1rem; padding: 10px 20px; border-radius: 10px; background: var(--accent-blue); color: #00121a; font-weight: 800; cursor: pointer; }
+
         .modal-body { 
             padding: 30px; display: flex; flex-direction: column; align-items: center; 
             max-height: 85vh; overflow-y: auto; 
@@ -282,11 +285,13 @@
         <div class="modal">
             <div class="modal-header">
                 <div class="modal-title" id="modalTitle">Título</div>
-                <button class="modal-close" id="modalClose">&times;</button>
             </div>
             <div class="modal-body">
                 <img src="" alt="Visualización técnica" class="modal-img" id="modalImg" title="Clic para ampliar">
                 <div class="modal-desc" id="modalDesc">Descripción técnica detallada.</div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-close" id="modalClose">Salir</button>
             </div>
         </div>
     </div>
